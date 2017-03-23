@@ -14,7 +14,13 @@ body {
 
 .interface {
 	text-align: center;
-	padding: 20px;
+	padding: 240px 20px;
+}
+
+h1 {
+	font-size: 60px;
+	color: white;
+
 }
 
 a.button {
@@ -24,17 +30,36 @@ a.button {
 	padding: 20 40px;
 	text-transform: uppercase;
 	text-decoration: none;
+	font-weight: bold;
 	border-radius: 10px;
 	transition: color 300ms
 }
 
 a:hover {
-	color: red; 
+	color: D34F7F; 
 
 }
 
+a.abortnow {
+	display: inline-block;
+	background-color: D34F7F; 
+	color: white;
+	padding: 20 40px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 10px;
+	transition: color 300ms
+}
+
+a.abortnow:hover {
+	color: white;
+}
+
 .right {
+		background: url('img/stars-bg3.png');
 	background-color: #34495E;
+	
 	position: fixed;
 	width: 50%; 
 	height: 100%; 
@@ -59,7 +84,7 @@ a:hover {
 	left: 50%;
 	margin-left: -250px;
 	background: url('img/laterlosers.png') no-repeat 0 0;
-	width: 227px;
+	width: 262px;
 	height: 72px;
 	display: none;
 }
