@@ -1,5 +1,10 @@
+body {
+	font-family: 'helvetica', 'arial', sans-serif;
+}
+
+
 .left {
-	background-color: grey;
+	background-color: #2C3E50;
 	position: fixed;
 	width: 50%; 
 	height: 100%; 
@@ -7,8 +12,29 @@
 	left: 0;
 }
 
+.interface {
+	text-align: center;
+	padding: 20px;
+}
+
+a.button {
+	display: inline-block;
+	background-color: white; 
+	color: black;
+	padding: 20 40px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 10px;
+	transition: color 300ms
+}
+
+a:hover {
+	color: red; 
+
+}
+
 .right {
-	background-color: aliceblue;
+	background-color: #34495E;
 	position: fixed;
 	width: 50%; 
 	height: 100%; 
@@ -16,23 +42,64 @@
 	right: 0;
 }
 
-.ground {
-	background-color: green; 
-	position: absolute;
-	bottom: 0; 
-	left: 0; 
-	width: 100%; 
-	height: 20px;
-}
-
 .rocket {
 	position: absolute;
 	left: 50%; 
-	bottom: 20px;
-	width: 20px;
-	height: 100px;
-	background-color: blue; 
+	bottom: -10px;
+	width: 218px;
+	height: 173px;
+	margin-left: -109px;
+	background: url('img/rocket-state1.png') no-repeat 0 0; 
 	transition: bottom 10000ms;
+}
+
+.loser {
+	position: absolute;
+	bottom: 150px;
+	left: 50%;
+	margin-left: -250px;
+	background: url('img/laterlosers.png') no-repeat 0 0;
+	width: 227px;
+	height: 72px;
+	display: none;
+}
+
+.loser.show {
+	display: block;
+}
+
+.wereout {
+	position: absolute;
+	bottom: 160px;
+	left: 50%;
+	/*margin-left: -250px;*/
+	background: url('img/outofhere.png') no-repeat 0 0;
+	width: 257px;
+	height: 82px;
+	display: none;
+}
+
+.wereout.show {
+	display: block;
+}
+
+/* rocket bg image */
+body.body-state2 .rocket{
+	background-image: url('img/rocket-state2.gif'); 
+
+}
+
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+	background-image: url('img/rocket-state3.gif'); 
+}
+
+body.body-state5 .rocket{
+	background-image: url('img/boom.png');
+	width: 271px;
+	height: 166px;
+	margin-left: -135.5px;
+
 }
 
 body.body-state1 .rocket{
@@ -58,7 +125,14 @@ body.body-state3 .state3 {display: block;}
 body.body-state4 .state4 {display: block;}
 body.body-state5 .state5 {display: block;}
 
-
+.ground {
+	background-color: #16A085; 
+	position: absolute;
+	bottom: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 20px;
+}
 
 a {
 

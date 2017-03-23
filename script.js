@@ -15,6 +15,20 @@ var changeState = function (state) {
 			countdownNumber = countdownNumber-1;
 			document.getElementById('countdown').innerHTML = countdownNumber;
 
+			if (countdownNumber > 4 && countdownNumber <= 7) {
+				// loser
+				document.getElementById('loser').className = 'loser show'
+			} else {
+				document.getElementById('loser').className = 'loser'
+			};
+
+			if (countdownNumber > 1 && countdownNumber <= 4) {
+				// we're out
+				document.getElementById('wereout').className = 'wereout show'
+			} else {
+				document.getElementById('wereout').className = 'wereout'
+			};
+
 			if (countdownNumber <= 0) {
 				changeState(3);
 			};
@@ -27,7 +41,7 @@ var changeState = function (state) {
 			console.log('randomNumber: ', randomNumber)
 			
 			//success
-			if (randomNumber > 5) {
+			if (randomNumber > 2) {
 				changeState(4);
 			} else {
 				changeState(5); //oh no
