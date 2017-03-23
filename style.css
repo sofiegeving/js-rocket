@@ -2,6 +2,13 @@ body {
 	font-family: 'helvetica', 'arial', sans-serif;
 }
 
+.logo-img {
+	position: fixed;
+	float: left;
+	height: 25px;
+	width: 25px;
+	margin: 10px 0px 0px 10px;
+}
 
 .left {
 	background-color: #2C3E50;
@@ -55,6 +62,8 @@ a.abortnow {
 a.abortnow:hover {
 	color: white;
 }
+
+
 
 .right {
 		background: url('img/stars-bg3.png');
