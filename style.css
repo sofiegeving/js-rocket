@@ -2,14 +2,6 @@ body {
 	font-family: 'helvetica', 'arial', sans-serif;
 }
 
-.logo-img {
-	position: fixed;
-	float: left;
-	height: 25px;
-	width: 25px;
-	margin: 10px 0px 0px 10px;
-}
-
 .left {
 	background-color: #2C3E50;
 	position: fixed;
@@ -66,9 +58,8 @@ a.abortnow:hover {
 
 
 .right {
-		background: url('img/stars-bg3.png');
+	background: url('img/stars-bg3.png');
 	background-color: #34495E;
-	
 	position: fixed;
 	width: 50%; 
 	height: 100%; 
